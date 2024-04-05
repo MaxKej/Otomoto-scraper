@@ -4,7 +4,7 @@ require 'wicked_pdf'
 require 'csv'
 
 # scraper przypjmuje link do wyniku wyszukiwania ofert w serwisie otomoto,
-# tworzy plik csv z danymi pojazdów oraz plik pdf zawierający zdjęcia i dane znalezionych pojazdóœ
+# tworzy plik csv z danymi pojazdów oraz plik pdf zawierający zdjęcia i dane znalezionych pojazdów
 class Scraper
   # link zawiera link do wyniku wyszukiwania ofert przez otomoto
   # dane zawierają informacje o nazwie pojazdu, przebiegu, paliwie, skrzyni biegów, roku produkcji i cenie
@@ -148,6 +148,7 @@ class Scraper
 
 end
 
+# Podany link jest odnośnikiem do wyniku wyszukiwania w serwisie otomoto
 otomoto_link = 'https://www.otomoto.pl/osobowe/bmw/seg-sedan/od-2004?search%5Bfilter_float_price%3Ato%5D=10000&search%5Bfilter_float_year%3Ato%5D=2008'
 
 scraper = Scraper.new(otomoto_link)
